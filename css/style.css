@@ -1,22 +1,24 @@
-body{
-    font-family: sans-serif;
-}
 
-html,
-.fullsreen{
+body {
+    font-family: sans-serif;
+  }
+  
+  /* Make content area fill the entire browser window */
+  html,
+  .fullscreen {
     display: flex;
     height: 100%;
     margin: 0;
     padding: 0;
     width: 100%;
-}
-
-.container{
+  }
+  
+  /* Center the content in the browser window */
+  .container {
     margin: auto;
     text-align: center;
-    color: rgb(117, 57, 173);
-}
-
-.title{
+  }
+  
+  .title {
     font-size: 3rem;
-}
+  }
