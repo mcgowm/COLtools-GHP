@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { StartOption } from '../hro'
+
+
 
 @Component({
   selector: 'app-opt-list',
@@ -6,6 +9,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./opt-list.component.css']
 })
 export class OptListComponent implements OnInit {
+
+  hro = 'WindFFT'
 
   constructor() { }
 
