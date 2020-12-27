@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { StartOption } from '../hro'
+import { StartOption } from '../startOption'
 
 
 
@@ -10,7 +10,10 @@ import { StartOption } from '../hro'
 })
 export class OptListComponent implements OnInit {
 
-  hro = 'WindFFT'
+  hro: StartOption = {
+    id: 1,
+    name: 'Wwwi'
+  };
 
   constructor() { }
 
