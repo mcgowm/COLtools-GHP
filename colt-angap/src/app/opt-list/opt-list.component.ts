@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { StartOption } from '../startOption'
-
+import { StartOption } from '../startOption';
+import { OPTNS } from '../mockopt';
 
 
 @Component({
@@ -10,14 +10,14 @@ import { StartOption } from '../startOption'
 })
 export class OptListComponent implements OnInit {
 
-  hro: StartOption = {
-    id: 1,
-    name: 'Wwwi'
-  };
-
+  hro = OPTNS
+  selectedHero : StartOption;
   constructor() { }
 
   ngOnInit(): void {
+  }
+  onSelect(hro : StartOption): void {
+    this.selectedHero = hro;
   }
 
 }
